@@ -2,32 +2,37 @@
 
 @media (min-width: 768px) {
   .container {
-    min-width: 900px;
-    min-height: 550px;
+    min-width: 920px;
+    min-height: 510px;
     flex-direction: row;
     justify-content: space-between;
   }
   header {
-    width: 50%;
+    width: 55%;
     height: 100%;
-    top: 50px;
+    top: 0px;
     left: -100px;
     background: url(/src/images/illustration-box-desktop.svg) no-repeat left
         center,
-      url(/src/images/bg-pattern-desktop.svg) no-repeat bottom right,
+      url(/src/images/bg-pattern-desktop.svg) no-repeat -200px 20px,
       url(/src/images/illustration-woman-online-desktop.svg) no-repeat center
-        right;
+        left;
 
     background-size: auto, cover, contain;
+    // background-color: blue;
   }
 
   main {
-    width: 50%;
+    width: 45%;
     margin-left: auto;
     padding: 0 2rem;
     h1 {
       margin-top: 5rem;
       text-align: left;
     }
+  }
+
+  .attribution {
+    left: 40%;
   }
 }

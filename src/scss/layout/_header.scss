@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 header {
+  content: '';
   width: 90%;
   min-height: 300px;
   position: absolute;

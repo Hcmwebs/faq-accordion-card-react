@@ -2,6 +2,7 @@ import { IconContext } from 'react-icons';
 import Header from './Js/components/Header';
 
 import Main from './Js/components/Main';
+import Attribution from './Js/components/Attribution';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <div className='container'>
         <Header />
         <Main />
-        
+        <Attribution />
+
       </div>
     </IconContext.Provider>
   );
