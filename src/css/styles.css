@@ -19,7 +19,7 @@ body {
 .container {
   width: 90%;
   max-width: 1440px;
-  margin: 200px auto;
+  margin: 100px auto;
   padding: 2rem;
   border-radius: 2rem;
   border: none;
@@ -121,6 +121,7 @@ main h1 {
 
 @media (min-width: 768px) {
   .container {
+    width: 100%;
     min-width: 920px;
     min-height: 510px;
     flex-direction: row;
