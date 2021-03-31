@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+
+.accordion {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+  @include flex(column, space-around, center);
+  cursor: pointer;
+  border-bottom: 1px solid $dividersColor;
+
+  &__header {
+    width: 100%;
+    @include flex(row, space-between, center);
+    padding: 0.7rem 0;
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-align: left;
+      color: $textPrimaryColor;
+      background-color: #fff;
+
+      &:hover {
+        color: $textSecondaryColor;
+      }
+    }
+    span {
+      margin-left: auto;
+    }
+  }
+
+  &__body {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $textPrimaryColor;
+    }
+
+    &.active {
+      min-height: 90px;
+      opacity: 1;
+    }
+  }
+}

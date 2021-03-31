@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 900px;
+    min-height: 550px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header {
+    width: 50%;
+    height: 100%;
+    top: 50px;
+    left: -100px;
+    background: url(/src/images/illustration-box-desktop.svg) no-repeat left
+        center,
+      url(/src/images/bg-pattern-desktop.svg) no-repeat bottom right,
+      url(/src/images/illustration-woman-online-desktop.svg) no-repeat center
+        right;
+
+    background-size: auto, cover, contain;
+  }
+
+  main {
+    width: 50%;
+    margin-left: auto;
+    padding: 0 2rem;
+    h1 {
+      margin-top: 5rem;
+      text-align: left;
+    }
+  }
+}

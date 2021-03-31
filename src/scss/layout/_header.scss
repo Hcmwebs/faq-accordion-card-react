@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+header {
+  width: 90%;
+  min-height: 300px;
+  position: absolute;
+  top: -100px;
+  background: url(/src/images/bg-pattern-mobile.svg) no-repeat 50% 120px,
+    url(/src/images/illustration-woman-online-mobile.svg) no-repeat top center;
+  z-index: 1;
+}

@@ -1,0 +1,11 @@
+@use '../abstracts/colors' as *;
+$textPrimaryColor: $veryDarkDesaturatedBlue;
+$textSecondaryColor: $softRed;
+$textNeutralColor: $veryDarkGrayishBlue;
+$textNeutralSecondaryColor: $darkGrayishBlue $veryDarkGrayishBlue;
+$bgGradient: linear-gradient($softViolet, $softBlue);
+$dividersColor: $lightGrayishBlue;
+
+$bgComponents: $bgContainerColor;
+
+$boxShadow: 0 1px 20px rgba(0, 0, 0, 0.2);
