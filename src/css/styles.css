@@ -121,9 +121,9 @@ main h1 {
 
 @media (min-width: 768px) {
   .container {
-    width: 100%;
     min-width: 920px;
-    min-height: 510px;
+    width: 100%;
+    min-height: 520px;
     flex-direction: row;
     justify-content: space-between;
   }
