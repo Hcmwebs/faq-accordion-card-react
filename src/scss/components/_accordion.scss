@@ -3,20 +3,23 @@
 .accordion {
   width: 95%;
   margin: 0 auto;
-  padding: 0.2rem 0;
+  padding: 0.7rem 0;
   @include flex(column, space-around, center);
   cursor: pointer;
-  border-bottom: 1px solid $dividersColor;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $dividersColor;
+  }
 
   &__header {
     width: 100%;
     @include flex(row, space-between, center);
-    padding: 0.7rem 0;
+    padding: 0.2rem 0;
 
     h2 {
       max-width: 85%;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       text-align: left;
       color: $textPrimaryColor;
       background-color: #fff;
@@ -39,13 +42,13 @@
     p {
       max-width: 85%;
       font-size: 0.9rem;
-      font-weight: 400;
+      font-weight: 300;
       text-align: left;
       color: $textPrimaryColor;
     }
 
     &.active {
-      min-height: 120px;
+      height: auto;
       opacity: 1;
     }
   }

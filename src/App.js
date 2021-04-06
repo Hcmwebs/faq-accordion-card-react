@@ -9,11 +9,10 @@ function App() {
     <IconContext.Provider
       value={{ color: '	hsl(14, 88%, 65%)', size: '1.2rem' }}
     >
-      <div className='container'>
+      <div className='app'>
         <Header />
         <Main />
         <Attribution />
-
       </div>
     </IconContext.Provider>
   );

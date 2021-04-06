@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.app {
+  max-width: 350px;
+  height: 600px;
+  margin: 100px auto;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: $boxShadow;
+  background-color: $bgComponents;
+  position: relative;
+  @include flex(column, center, center);
+}

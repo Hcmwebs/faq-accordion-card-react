@@ -1,9 +1,9 @@
 @use '../abstracts/' as *;
 
 @media (min-width: 768px) {
-  .container {
+  .app {
     max-width: 920px;
-    height: 520px;
+    height: 510px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -11,22 +11,21 @@
     width: 55%;
     height: 100%;
     top: 0px;
-    left: -100px;
-    background: url(/src/images/illustration-box-desktop.svg) no-repeat left
-        center,
-      url(/src/images/bg-pattern-desktop.svg) no-repeat -200px 20px,
-      url(/src/images/illustration-woman-online-desktop.svg) no-repeat center
-        left;
-
-    background-size: auto, cover, contain;
+    left: -50px;
+    background: url(/src/images/illustration-box-desktop.svg) no-repeat -50px 180px,
+      url(/src/images/bg-pattern-desktop.svg) no-repeat center right,
+      url(/src/images/illustration-woman-online-desktop.svg) no-repeat -20px 50px;
+    background-size: auto, auto, auto;
   }
 
   main {
     width: 45%;
     margin-left: auto;
     padding: 0 2rem;
+
     h1 {
-      margin-top: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
       text-align: left;
     }
   }
